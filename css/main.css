@@ -205,12 +205,14 @@ width: 90%;
 
 .main__tree{
     background: #F6FBFA;
+    /* max-width: 1200px;
+    margin: 0 auto; */
 
 }
 .tree__section{
   display: flex;
   justify-content: space-between;
-  max-width: 1330px;
+  max-width: 1410px;
 margin-left: auto;
 padding-top: 5rem;
 }
@@ -220,11 +222,6 @@ padding-top: 5rem;
   align-items: center;
   margin-right: 20rem;
 }
-
-.person__{
-  /* max-width: 1640px; */
-  margin: 0 auto;
-}
 .person__grid{
 display: flex;
 gap: 0.9rem;
@@ -232,13 +229,6 @@ align-items: center;
 justify-content: center;
 margin: 0 auto;
 max-width: 1640px;
-/* height: 70%; */
-/* display: flex;
-align-items: center; */
-/* height: 90%; */
-/* display: grid;
-grid-template-columns: repeat(4, 1fr); */
-
 }
 .person__grid img{
   width: 100%;
