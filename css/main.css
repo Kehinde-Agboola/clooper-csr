@@ -11,7 +11,7 @@
   --dark-d3: #000000;
 }
 body{
-    max-width: 1540px;
+    max-width: 1640px;
     margin: 0 auto;
     overflow-x: hidden;
 }
@@ -221,12 +221,29 @@ padding-top: 5rem;
   margin-right: 20rem;
 }
 
-
+.person__{
+  /* max-width: 1640px; */
+  margin: 0 auto;
+}
 .person__grid{
 display: flex;
-gap: 0.4rem;
-}
+gap: 0.9rem;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+max-width: 1640px;
+/* height: 70%; */
+/* display: flex;
+align-items: center; */
+/* height: 90%; */
+/* display: grid;
+grid-template-columns: repeat(4, 1fr); */
 
+}
+.person__grid img{
+  width: 100%;
+  height: 100%;
+}
 article{
   max-width: 1200px;
   margin: 0 auto;
