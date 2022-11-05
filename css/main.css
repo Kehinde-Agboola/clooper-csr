@@ -11,7 +11,11 @@
 :root {
   --dark-d1: #363636;
   --dark-d3: #000000;
+  --button: #faca38;
   --footer: #363636;
+  --green: #419078;
+  --very-light-green: #eef7f5;
+  --white: #ffff;
 }
 body {
   max-width: 1640px;
@@ -77,25 +81,35 @@ span img {
 
 .hero__section {
   background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5) 100%,
-      rgba(0, 0, 0, 0.5) 100%
+      180deg,
+      rgba(0, 0, 0, 0) 10.42%,
+      rgba(0, 0, 0, 0.14) 27.08%,
+      rgba(0, 0, 0, 0.75) 100.6%
     ),
     url("../img/image\ 69.png");
   mix-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 500px;
+  min-height: 600px;
+  position: relative;
 }
 .header__ {
   display: flex;
   align-items: initial;
   justify-content: center;
   flex-direction: column;
-  width: 48%;
+  width: 55%;
+  letter-spacing: 2px;
   margin: 0 auto;
   text-align: center;
   color: white;
-  min-height: 500px;
+  font-style: normal;
+  font-weight: 500;
+  position: absolute;
+  top: 45%;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .sub__heading ul {
@@ -293,7 +307,7 @@ article {
 
 .quote__section {
   display: flex;
-  background: #eef7f5;
+  background: var(--very-light-green);
   max-width: 1200px;
   margin: 4rem auto;
   gap: 2rem;
@@ -301,8 +315,11 @@ article {
   border: 1px dashed #419078;
   border-radius: 30px;
 }
+.quote__img2 {
+  width: 30%;
+}
 blockquote h1 {
-  width: 85%;
+  width: 80%;
 }
 .quote__section .strong {
   padding-top: 1rem;
@@ -315,4 +332,114 @@ blockquote h1 {
 .three__ span img {
   width: 100%;
   align-self: center;
+}
+.fund__bg {
+  background: linear-gradient(180deg, #363636 71%, #000000 90%);
+  padding-bottom: 4rem;
+}
+.fund {
+  background: linear-gradient(180deg, rgba(54, 54, 54, 0) 0%, #363636 100%),
+    url("../img/water.svg");
+  width: 100%;
+  min-height: 600px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative;
+}
+.overlay h1 {
+  font-size: 2rem;
+}
+.overlay {
+  width: 27%;
+  position: absolute;
+  top: 65%;
+  right: 0;
+  left: 12%;
+  bottom: 0;
+  color: white;
+}
+.fund__boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: auto;
+  gap: 4rem;
+}
+.fund__box {
+  display: flex;
+  background: #ffffff;
+  border-radius: 20px;
+  height: 244px;
+}
+.fund__img img {
+  width: 100%;
+  /* height: auto; */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.fund__word {
+  width: 75%;
+  padding: 1.5rem 2rem;
+  font-size: 0.8rem;
+}
+.footer__ {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+.footer__ a {
+  text-decoration: none;
+  color: var(--green);
+}
+.footer__ img {
+  width: 100%;
+}
+.class {
+  color: white;
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+.class a {
+  color: #faca38;
+}
+
+.award {
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+.award__title {
+  width: 30%;
+}
+.award__title h2 {
+  font-size: 3rem;
+}
+.header__flex {
+  display: flex;
+  justify-content: space-between;
+  color: #419078;
+}
+.header__flex img {
+  width: 2%;
+}
+.tech__wordings {
+  width: 90%;
+  /* padding: 1rem 1rem; */
+}
+.tech__box {
+  display: flex;
+  max-width: 550px;
+  border-radius: 10px;
+  background: pink;
+}
+.tech__img {
+  width: 100%;
+  /* padding-top: 1rem;
+  padding-left: 1rem; */
 }
